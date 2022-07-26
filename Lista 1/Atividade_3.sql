@@ -19,3 +19,7 @@ INSERT INTO tb_alunos (nome_aluno, idade, genero, turma, nota, aprovacao) VALUES
 INSERT INTO tb_alunos (nome_aluno, idade, genero, turma, nota, aprovacao) VALUES ("Paulo", 8, "Masculino", 4, 5, false);
 INSERT INTO tb_alunos (nome_aluno, idade, genero, turma, nota, aprovacao) VALUES ("Laura", 10, "Feminino", 3, 9, true);
 INSERT INTO tb_alunos (nome_aluno, idade, genero, turma, nota, aprovacao) VALUES ("Priscila", 7, "Feminino", 4, 10, true);
+
+SELECT * FROM tb_alunos WHERE nota < 7;
+SELECT * FROM tb_alunos WHERE nota > 7;
+UPDATE tb_alunos SET aprovacao = true WHERE id = 5;
